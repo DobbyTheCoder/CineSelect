@@ -1,0 +1,154 @@
+﻿.login-container {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    text-align: center;
+    
+}
+
+.login-form-1 {
+    padding: 5%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    top: 56px;
+    left: 2px;
+    margin-top: 0px;
+}
+
+    .login-form-1 h3 {
+        text-align: center;
+        color: #333;
+    }
+
+.login-form-2 {
+    padding: 5%;
+    background: #0062cc;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+    .login-form-2 h3 {
+        text-align: center;
+        color: #fff;
+    }
+
+.login-container form {
+    padding: 10%;
+}
+
+.btnSubmit {
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form-1 .btnSubmit {
+    font-weight: 600;
+    color: #fff;
+    background-color: #0062cc;
+}
+
+.login-form-2 .btnSubmit {
+    font-weight: 600;
+    color: #0062cc;
+    background-color: #fff;
+}
+
+.login-form-2 .ForgetPwd {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-form-1 .ForgetPwd {
+    color: #0062cc;
+    font-weight: 600;
+    text-decoration: none;
+}
+body{
+  background-image:"deadpool.jpg";
+}
+.link {
+    text-decoration: none;
+    color:blue;
+}
+
+.link:hover{
+    color:pink;
+    text-decoration:none;
+}
+
+.mygrdContent {
+    width: 80%;
+    border: solid 2px black;
+    min-width: 80%;
+}
+
+.header {
+    background-color: #646464;
+    font-family: Arial;
+    color: White;
+    border: none 0px transparent;
+    height: 25px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.rows {
+    background-color: #fff;
+    font-family: Arial;
+    font-size: 14px;
+    color: #000;
+    min-height: 25px;
+    text-align: left;
+    border: none 0px transparent;
+}
+
+    .rows:hover {
+        background-color: #ff8000;
+        font-family: Arial;
+        color: #fff;
+        text-align: left;
+    }
+
+.selectedrow {
+    background-color: #ff8000;
+    font-family: Arial;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+}
+
+.mydatagrid a /** FOR THE PAGING ICONS  **/ {
+    background-color: Transparent;
+    padding: 5px 5px 5px 5px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mygrdContent a:hover /** FOR THE PAGING ICONS  HOVER STYLES**/ {
+    background-color: #000;
+    color: #fff;
+}
+
+.mygrdContent span /** FOR THE PAGING ICONS CURRENT PAGE INDICATOR **/ {
+    background-color: #c9c9c9;
+    color: #000;
+    padding: 5px 5px 5px 5px;
+}
+
+.pager {
+    background-color: #646464;
+    font-family: Arial;
+    color: White;
+    height: 30px;
+    text-align: left;
+}
+
+.mygrdContent td {
+    padding: 5px;
+}
+
+.mygrdContent th {
+    padding: 5px;
+}

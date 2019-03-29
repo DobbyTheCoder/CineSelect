@@ -106,6 +106,10 @@
           </a>
         </div>
     </div>
+
+        <div class="row pt-3 pb-3 pl-3" id="divLight">
+            <h1>TOP STORIES</h1>
+        </div>
         
        <!-- <div class="row pb-3 pt-3 text-center border border-top-0 border-right-0 border-left-0 border-dark" id="divLight">
             <div class="col">
@@ -123,28 +127,34 @@
         </div>-->
 
         <div class="row pt-3 pb-3 border border-top-0 border-right-0 border-left-0 border-dark" id="divLight">
-            <div class="col">
-                <h2>Angelina Jolie may soon make Marvel debut with 'The Eternals'</h2>
+            <div class="col-9">
+                <h3>Angelina Jolie may soon make Marvel debut with 'The Eternals'</h3>
                 <h5>March 27, 2019</h5>
                
                 <p>The Oscar-winning actor has chosen the project based on the Jack Kirby-created title about superpowered and near-immortal beings known as Eternals and a more monstrous offshoot known as the Deviants that were created by the cosmic beings called Celestials.</p>
                 <p>The details about the movie are being kept under wraps but one of the insiders has revealed one aspect to the story involves the love story between Ikaris, a man fuelled by cosmic energy, and Sersi, who relishes moving amongst humans. </p>
             </div>
+            <div class ="col-3">
+                <img src="aj.jpg" onmouseover="shadow(this)" onmouseout="normal(this)" class="rounded imgSmall"/>
+            </div>
         </div>
 
         <div class="row pt-3 pb-3 border border-top-0 border-right-0 border-left-0 border-dark" id="divLight">
-            <div class="col">
-                <h2>'Get Out' Director Jordan Peele Not Interested in Casting a 'White Dude' as the Lead in His Movie</h2>
+            <div class="col-9">
+                <h3>'Get Out' Director Jordan Peele Not Interested in Casting a 'White Dude' as the Lead in His Movie</h3>
                 <h5>March 27, 2019</h5>
                
                 <p>Hollywood writer-director and comedian Jordan Peele (Get Out and Us) has claimed in an interview that he does not see a white man playing a lead role in his films. Peele said, "I don’t see myself casting a white dude as the lead in my movie. Not that I don’t like white dudes. But I’ve seen that movie."</p>
                 <p>Peele's statement comes when Hollywood has seemingly reached a saturation point and formula films featuring the conventional white man as the lead actor is slowly weeding out of fashion. Recently, there were reports that Christopher Nolan is also planning to cast a non-white lead actor, a first for the director.</p>
             </div>
+            <div class ="col-3">
+                <img src="jp.jpg" onmouseover="shadow(this)" onmouseout="normal(this)" class="rounded imgSmall"/>
+            </div>
         </div>
 
         <div class="row pt-3 pb-3 border border-top-0 border-right-0 border-left-0 border-dark" id="divLight">
             <div class="col">
-                <h2>Posters Drop For “Avengers: Endgame” And Our Heroes Will Avenge The Fallen</h2>
+                <h3>Posters Drop For “Avengers: Endgame” And Our Heroes Will Avenge The Fallen</h3>
                 <h5>March 27, 2019</h5>
                
                 <p>Earlier today, a series of New Posters were released for next month’s epic Marvel Cinematic Universe entry Avengers: Endgame. With that recent Trailer likely being it, in terms of new looks at the MCU effort, we should probably expect things like this to suffice until the April release date. Pundits like myself have already received our press screening invitations, so it’s basically a waiting game now. A month away, this end to the latest phase of the MCU will undoubtedly change everything. As such, it’s an incredible cinematic event, one that pop culture itself will be awaiting. Few movies can create the sort of wave in the zeitgeist that this can.</p>

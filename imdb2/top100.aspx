@@ -68,17 +68,17 @@
                     <%
                         int i = 1;
                         conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\talre\OneDrive\Desktop\CineSelect\imdb2\users.accdb";
-                        System.Data.OleDb.OleDbCommand cmdd = new System.Data.OleDb.OleDbCommand("SELECT title,release,poster,plot from top100", conn);
+                        System.Data.OleDb.OleDbCommand cmdd = new System.Data.OleDb.OleDbCommand("SELECT title,release,poster,plot,imdbID from top100", conn);
                         conn.Open();
                         System.Data.OleDb.OleDbDataReader reader = cmdd.ExecuteReader();
                         while(reader.Read())
                         { %>
-                        <div class="row p-3 ml-3 border bg-dark">
-                            <div class="col-3" style="margin:0 !important; padding:0 !important">
+                        <div class="row p-3 ml-3 border bg-dark border-left-0">
+                            <div class="col-3 border border-left-0 border-top-0 border-bottom-0" style="margin:0 !important; padding:0 !important">
                             <img src="<%=reader[1]%>" class="" style="height:256px;width:180px;" />
                                 </div>
                             <div class="col-6 p-2">
-                                <a class="text-white p-2" style="font-size:30px" href="#"><% =reader[0].ToString()%></a>
+                                <a class="text-white p-2" style="font-size:30px" href="movietemplate.aspx?t=<%=reader[0] %>"><% =reader[0].ToString()%></a>
                                 <h5 class="text-white mt-3 ml-2"><%=reader[2] %></h5>
                                 <h6 class="text-white mt-3 ml-2">Rating : <%=reader[3] %></h6>
                             </div>

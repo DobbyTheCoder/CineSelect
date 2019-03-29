@@ -84,16 +84,25 @@
     
       <div class="col text-center">
           <h5 class="text-white text-center pt-3">Rating : <%=rating %></h5>
-          <div class="mt-4 ml-5">
+          <div class="">
+             <%if (disabled == false)
+                 { %>
           <span class="text-white mr-3">Rate out of 5</span>
-          <select class="">
+         
+          <select class="" name="rate">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
               <option value="5">5</option>
            </select>
-            <asp:Button ID="Button2" class="ml-1" runat="server" Text="Rate" />
+              <%} %>
+
+              <%else
+    {%>
+               <span class="text-white"></span>
+              <%} %>
+            <asp:Button ID="Button2" class="ml-1" runat="server" Text="Rate" OnClick="Button2_Click" />
               <asp:Label ID="Label1" runat="server" Text="Thanks for rating!" ForeColor="#00CC00" Visible="False"></asp:Label>
               </div>
       </div>

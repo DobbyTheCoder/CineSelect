@@ -70,44 +70,47 @@ public partial class movietemplate : System.Web.UI.Page
         rating = movies.imdbRating;
         id = movies.imdbID;
 
-        conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\talre\OneDrive\Desktop\CineSelect\imdb2\users.accdb";
-        OleDbCommand cmdd = new OleDbCommand("SELECT rating from rating WHERE id=@id AND username=@name");
-        cmdd.Parameters.AddWithValue("@id", id);
-        cmdd.Parameters.AddWithValue("@name", Session["username"].ToString());
-        cmdd.Connection = conn;
-
-        try
+        if (Session["username"] != null)
         {
-            conn.Open();
+            conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\talre\OneDrive\Desktop\CineSelect\imdb2\users.accdb";
+            OleDbCommand cmdd = new OleDbCommand("SELECT rating from rating WHERE id=@id AND username=@name");
+            cmdd.Parameters.AddWithValue("@id", id);
+            cmdd.Parameters.AddWithValue("@name", Session["username"].ToString());
+            cmdd.Connection = conn;
 
-            OleDbDataReader reader = cmdd.ExecuteReader();
-
-
-            while (reader.Read())
+            try
             {
-                
-                    if(reader[0].ToString() != "")
+                conn.Open();
+
+                OleDbDataReader reader = cmdd.ExecuteReader();
+
+
+                while (reader.Read())
+                {
+
+                    if (reader[0].ToString() != "")
                     {
                         Label1.Text = "Your Rating : " + reader[0].ToString();
                         Label1.Visible = true;
                         Button2.Visible = false;
                         disabled = true;
                     }
-                    
-                    
-               
-            }
-        }
 
-        catch (OleDbException ex)
-        {
-            Label1.Text = ex.Message;
-            Label1.Visible = true;
-            conn.Close();
-        }
-        finally
-        {
-            conn.Close();
+
+
+                }
+            }
+
+            catch (OleDbException ex)
+            {
+                Label1.Text = ex.Message;
+                Label1.Visible = true;
+                conn.Close();
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
     }
 

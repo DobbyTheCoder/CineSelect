@@ -38,8 +38,8 @@
                             &nbsp;<asp:TextBox ID="TextBox2" runat="server" type="password" class="form-control" Width="25%" placeholder="Password"></asp:TextBox>
                          </div><br />
                         <div class="form-group">
-                           <a href="home.aspx"> <asp:button class="btnSubmit bg-success text-center text-white shadow"  runat="server" Text="Login" ID="loginBtn"   Width ="35%" OnClick="loginBtn_Click"/></p></a>
-                           
+                           <asp:button class="btnSubmit bg-success text-center text-white shadow"  runat="server" Text="Login" ID="loginBtn"   Width ="35%" OnClick="loginBtn_Click"/></p>
+                           <asp:Button  class="btnSubmit bg-primary text-center text-white shadow" ID="register" runat="server" Width ="25%" Text="OR Register with us!" OnClick="register_Click"></asp:Button>
                         </div>
                         
                         </div>

@@ -66,4 +66,9 @@ public partial class login : System.Web.UI.Page
         }
         return hash.ToString();
     }
+
+    protected void register_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("register.aspx");
+    }
 }
